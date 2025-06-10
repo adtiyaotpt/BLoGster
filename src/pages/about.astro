@@ -1,5 +1,5 @@
 ---
-import Navigation from '../components/navigation.astro'; 
+import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 
@@ -8,6 +8,7 @@ const identity = {
   firstName: "Aditya",
   country: "India",
   occupation: "Developer Intern",
+  organisation: "Opalina Technologies",
   hobbies: ["photography", "star gazing", "sports & fitness", "trekking", "travelling"],
 };
 const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "C++", "Python", "Java", "TypeScript", "Node.js", "SQL", "Git", "REST APIs"];
@@ -26,7 +27,7 @@ const skillColor = "navy";
     <title>{pageTitle}</title>
 	  <style define:vars={{skillColor}}>
       h1 {
-        color: purple;
+        color: rgb(7, 121, 123);
         font-size: 4rem;
       }
 	  .skill {
@@ -53,7 +54,7 @@ const skillColor = "navy";
     <ul>
       <li>My name is {identity.firstName}.</li>
       <li>
-        I live in {identity.country} and I work as a {identity.occupation}.
+        I live in {identity.country} and I work as a {identity.occupation} at {identity.organisation}.
       </li>
       {
         identity.hobbies.length >= 2 && 

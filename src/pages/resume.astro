@@ -1,9 +1,9 @@
 ---
 import Navigation from '../components/navigation.astro';
-import Footer from '../components/Footer.astro';
+import Footer from '../components/Footer.astro'
 import '../styles/global.css';
 
-const pagetitle = "Aditya Gupta";
+const pagetitle = "CV";
 ---
 
 <html lang="en">
@@ -15,8 +15,14 @@ const pagetitle = "Aditya Gupta";
 		<title>{pagetitle}</title>
 	</head>
 	<body>
-		<Navigation/>
-		<h1>Blogster</h1>
+		<Navigation />
+		<h1>Resume</h1>
+        <p>This is my resume.</p>
+		<ul>
+      		<li><a href="/posts/post-1/">Post 1</a></li>
+	  		<li><a href="/posts/post-2/">Post 2</a></li>
+      		<li><a href="/posts/post-3/">Post 3</a></li>
+    	</ul>
 		<Footer/>
 	</body>
 </html>

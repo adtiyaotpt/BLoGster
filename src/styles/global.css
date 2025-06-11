@@ -1,16 +1,17 @@
 @import "tailwindcss";
 html {
-  background-color: #f1f5f9;
+  background-color: #111923;
   font-family: sans-serif;
 }
 
 body {
   margin: 0 auto;
   height: 100%;
-  width: 100%;
+  width: 100vw;
   /* max-width: 80ch; */
-  padding: 1rem;
+  padding: 10px;
   line-height: 1.5;
+  color: white;
 }
 
 * {
@@ -20,6 +21,88 @@ body {
 }
 
 h1 {
+  color: rgb(7, 121, 123);
   margin: 1rem 0;
-  font-size: 2.5rem;
+  font-size: 4rem;
+  font-weight: bold;
 }
+
+a{
+  padding: 0.5rem 1rem;
+        color: white;
+        text-decoration: none;
+        color: rgb(7, 121, 123);  
+    }
+
+.pts{
+  color: rgb(243, 160, 160); 
+  text-decoration: none;
+}
+
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: #ff9776;
+}
+
+.nav-links {
+  width: 100%;
+  top: 5rem;
+  left: 48px;
+  background-color: #ff9776;
+  display: none;
+  margin: 0;
+}
+
+.nav-links a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  background-color: rgb(7, 121, 123);
+  border-radius: 2rem;
+  color: white;
+}
+
+.expanded {
+  display: unset;
+}
+
+@media screen and (min-width: 636px) {
+  .nav-links {
+    margin-left: 5em;
+    display: block;
+    position: static;
+    width: auto;
+    background: none;
+  }
+
+  .nav-links a {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+
+}
+
+.hamburger {
+    display: none;
+  }
+
+  h2{
+   color: rgb(7, 121, 123);  
+   font-weight: 700; 
+  }
